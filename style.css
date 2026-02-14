@@ -28,7 +28,9 @@ h1 {
 body {
 	background: black;
 }
-
+.body.active {
+	overflow: hidden;
+}
 .contents {
 	display: flex;
 	margin-top: 50px;
@@ -64,7 +66,7 @@ header {
 	position: fixed;
 	top: 0px;
 	left: 0px;
-	z-index: 11;
+	z-index: 16;
 	display: flex;
 	width: 100%;
 	justify-content: space-between;
@@ -82,21 +84,27 @@ header button {
 	flex-direction: column;
 	justify-content: center;
 	position: relative;
-	bottom: 12px;
 	margin-right: 20px;
+	font-size: 3rem;
+	bottom: 5px;
+	font-family: "Roboto Condensed";
 }
-header button::before {
-	content: "_";
+
+header .menu-bar::before {
+	content: "=";"
 	font-size: 3rem;
 	font-weight: lighter;
 }
-header button::after {
-	content: "_";
+
+.menu-bar.active::before {
+	content: "x";
+	transform: scaleY(0.7);
+}
+.menu-bar.active::after {
+	transform: translate(0,-11px) rotateX(45deg);
 	position: absolute;
-	bottom: 10px;
-	font-size: 3rem;
-	font-weight: lighter;
 }
+
 .hero h2, p {
 	color: white;
 	font-family: "Roboto Condensed";
@@ -113,10 +121,12 @@ header button::after {
 .hero {
 height: 200px;
 background-size: cover;
-border: 0.0000001px solid transparent;
+border: 1px solid transparent;
 }
 .hero .content {
 	margin-top: 5rem;
+	margin-left: 65px;
+	margin-right: 10px;
 }
 .hero video {
 	position: absolute;
@@ -125,4 +135,103 @@ border: 0.0000001px solid transparent;
 	height: 400px;
 	width: 100%;
 	opacity: 0.5;
+}
+.page {
+	writing-mode: vertical-rl;
+	position: absolute;
+	left: 38px;
+	font-size: 0.65rem;
+	letter-spacing: 0.5px;
+	z-index: 5;
+	color: white;
+	font-family: "Share tech";
+	max-height: 200px;
+	height: 200px;
+}
+.page::before {
+	content: "| ";
+	font-size: 1.2rem;
+	font-weight: lighter;
+	font-family: sans-serif;
+}
+#page1 {
+	top: 130px;
+}
+#page2 {
+	top: 470px;
+}
+table {
+	border: none;
+	width: 90%;
+	margin-top: 50px;
+}
+table th, td {
+	font-weight: normal;
+	border-bottom: 0.5px solid #ccc;
+	text-align: start;
+	padding: 8px 5px;
+	font-size: 0.8rem;
+}
+.contact {
+	margin-top: 50px;
+	font-size: 0.8rem;
+}
+footer {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 50px;
+	flex-direction: column;
+}
+footer img {
+	height: 30px;
+}
+footer p {
+	font-size: 0.7rem;
+}
+.navScreen {
+	position: fixed;
+	height: 100%;
+	width: 100%;
+	background: rgba(0,0,0,0.8);
+	color: white;
+	z-index: 15;
+	top: 0px;
+	left: 0px;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	flex-direction: column;
+	visibility: hidden;
+}
+.navScreen.active {
+	visibility: visible;
+}
+.navScreen .actions {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	margin-bottom: 17rem;
+}
+.actions a {
+	text-align: center;
+	font-size: 1.1rem;
+	font-family: "Roboto Condensed";
+	font-weight: bold;
+	letter-spacing: 1px;
+}
+.navScreen .social-medias {
+	margin-bottom: 20px;
+}
+.navScreen button {
+	background: none;
+	padding: 9px;
+	width: 160px;
+	margin: 5px;
+	border: 1px solid white;
+	border-radius: 0px;
+	font-size: 1.1rem;
+	color: white;
+	font-family: "Roboto Condensed";
 }
