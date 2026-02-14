@@ -11,17 +11,18 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 	</head>
 	
-	<body>
+	<body class="body">
 	
 	<header>
 		<img src="mappa.png">
-		<button></button>
+		<button class="menu-bar" onclick="showMenu()"></button>
 	</header>
 	<section class="hero">
 	<video id="heroVideo" autoplay loop muted playsinline webkit-playsinline class="bg-video">
-	<source src="jjk.mp4">
+	<source src="jjk.mp4" type="video/mp4"> 
 	</video>
 	<div class="content">
+	<div id="page1" class="page">VISION</div>
 	<h2 id="head">COMPANY</h2>
 	<h2>Delivering anime that will always remain in the hearts of viewers</h2>
 	<p>What we consider most important are the fans who look forward to our works.
@@ -43,7 +44,24 @@ As a studio, we strive to deliver animation that will remain in the hearts and m
 	<h1>OSAKA STUDIO</h1>
 	</div>
 	</div>
+	
+	<nav class="navScreen">
+		<div class="actions">
+			<a>NEWS</a>
+			<a>COMPANY</a>
+			<a>WORKS</a>
+			<a>ENGLISH</a>
+		</div>
+		<div class="social-medias">
+			<button><i class="fa-brands fa-x-twitter"></i> X</button>
+			<button><i class="fa-brands fa-youtube"></i> YouTube</button>
+		</div>
+	</nav>
+	
 	<main>
+	
+<div id="page2" class="page">STUDIO DEPARTMENT</div>
+
 
 <img src="cgi.webp">
 <h2><span class="h2"> CGI division </span></h2>
@@ -80,6 +98,7 @@ The division integrates functions such as accounting, finance, human resources, 
 Supporting production teams and employees working on the frontline of business, we carry out our daily tasks, taking pride in the fact that we ourselves contribute to the quality of projects. The most rewarding moment for us in the Administration Division is when MAPPA’s works are embraced by audiences worldwide.
 </p>
 
+
 <img src="working.webp">
 
 <p>Sendai Studio was established in 2018.
@@ -100,8 +119,73 @@ Located in the center of Osaka, it is easy for our artists to commute to the stu
 In the future, we are considering having Art staff, 2D Animators, Directors and local staff join the Osaka studio, with the aim of creating a functional production equivalent to that of Tokyo.
 </p>
 
+<section class="tables">
+<div class="page">COMPANY PROFILE</div>
+
+	<table>
+		<tr>
+			<th>Company Name</th>
+			<th>MAPPA Co.LTD</th>
+		</tr>
+		<tr>
+			<td>Estabilished</td>
+			<td>06/14/2011</td>
+		</tr>
+		<tr>
+			<td>Management</td>
+			<td>President : Manabu Otsuka<br>
+Chairman of the Board of Directors : Masao Maruyama<br>
+Executive Vice President : Hiroya Hasegawa<br>
+Board Member : Yusuke Tannawa<br>
+Board Member : Shuhei Yabuta<br>
+Board Member : Kosuke Hosokai<br>
+External Board Member : Yuichi Fukushima<br>
+Executive Officer : Keisuke Seshimo<br>
+Executive Officer : Motoi Okuno<br>
+
+Chief Rights Officer : Eiji Matsuo</td>
+		</tr>
+		<tr>
+			<td>Business Outline</td>
+			<td>With a focus on the production of TV animation, we plan and produce animated content across all genres and in a variety of other formats such as movies, commercials, and online videos. We also make use of the rights that we own for certain IPs as we operate our licensing business both domestically and overseas.</td>
+		</tr>
+		<tr>
+			<td>Number of Employees</td>
+			<td>467</td>
+		</tr>
+	</table>
+</section>
+	<section class="contact">
+	<div class="page">CONTACT</div>
+	Please feel free to contact us regarding work requests and consultations.
+Depending on the content of your inquiry, we may not be able to reply to you. We appreciate your understanding in advance.<br><br>
+
+Contact<br>
+info@mappa.co.jp<br><br>
+
+【ATTENTION】<br>
+1. Except in cases where a formal written agreement has been executed, our company does not accept or solicit any proposals (including ideas) related to content, projects, characters, or similar matters.<br>
+If you nevertheless choose to send us a proposal, you will be deemed to have agreed to the following terms:<br>
+・Our company has no obligation to maintain the confidentiality of your proposal.<br>
+・Our company has no obligation to review, evaluate, or adopt your proposal.<br>
+・Our company is under no obligation to respond to your proposal.<br>
+・Even if the content of your proposal is identical or similar to current or future projects or works of our company, we shall bear no liability whatsoever.<br>
+・Any materials related to your proposal will not be returned. If sent by mail, courier, or similar means, they will be discarded without being opened.<br><br>
+
+2. We are not accepting requests for company tours or interview requests from individuals.<br>
+We ask for your understanding.<br><br>
+
+3. We are unable to accept gifts or similar items from the general public.
+We kindly ask that you refrain from sending gifts via mail, courier, or delivery services.<br><br>
+
+4. We will not respond to portfolios or similar materials sent via email to the above inquiry address, or via mail or courier services.
+	</section>
 	</main>
 	</section>
+	<footer>
+		<img src="mappa.png">
+		<p>© MAPPA Co.,LTD</p>
+	</footer>
 	
 		<script src="script.js"></script>
 	</body>
