@@ -125,4 +125,5 @@ border: 0.0000001px solid transparent;
 	object-fit: cover;
 	height: 400px;
 	width: 100%;
+	opacity: 0.6;
 }
